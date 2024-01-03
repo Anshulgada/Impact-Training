@@ -34,10 +34,29 @@
 #
 # say_hello()
 
-def outer_function(x):
-    def inner_function(y):
-        return x + y
-    return inner_function
+# def outer_function(x):
+#     def inner_function(y):
+#         return x + y
+#     return inner_function
+#
+# result = outer_function(10)     # ==> outer_function takes value of 10
+# print(result(5))                # ==> inner_function takes value of 5
 
-result = outer_function(10) # ==> outer_function takes value of 10
-print(result(5))            # ==> inner_function takes value of 5
+
+
+# To print the string like 'aabbbcdddd' from ==> 2a3b1c4d
+def decode_string(s):
+    result = ""         # ==> empty string to store the final result
+    count = 0           # ==> number of times to repeat the char
+
+    for char in s:
+        if char.isdigit():
+            count = count * 10 + int(char)      # To use nums with 2 or more digits we used count * 10
+        else:
+            result += char * count              # Append char as many times as specified in input string
+            count = 0
+
+    return result      # No print statement here, as we print the result later so only return
+
+input_string = "2a3b11c4d"
+print(decode_string(input_string))
