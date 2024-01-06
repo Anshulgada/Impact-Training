@@ -12,6 +12,7 @@ for num in range(0,input_num):      # Iterate over input string in given range
         # If new string != empty string then we use it as input string
         # We slice the new string's last element & then append it
         # to the beginning of the new string, then print the rest of new string
+
     else:
         new_string = input_string[-1:] + input_string[0:-1]
         # Only in first iteration when new string is empty

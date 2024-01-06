@@ -30,10 +30,9 @@ def decode_string(given_string):
             count = 0  # Reset count to 0 for next loop
 
         else:
-            print("Wrong Symbol")  # For any other symbols like '*' or '+' or '.'
+            print("Wrong Symbol")     # For any other symbols like '*' or '+' or '.'
 
     return result
-
 
 input_string = "12a2sc4d"
 print(decode_string(input_string))
