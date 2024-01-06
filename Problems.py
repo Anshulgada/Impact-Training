@@ -55,7 +55,7 @@ print(decode_string(input_string))
 #
 # if (length_of_array % 2 != 0):
 #     print(sorted(array[0:mid]) + [array[mid]] + sorted(array[mid + 1: ]))
-#     # Odd num of elements so we just divide it into 2 sub-arrays + mid element
+#     # Odd num of elements so we just divide it into 2 sub-arrays + mid-element
 #     # individually and print them by concatenating L-Array + Mid + R-Array into 1 List
 #
 # else:
