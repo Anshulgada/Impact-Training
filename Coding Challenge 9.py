@@ -12,6 +12,10 @@ def minimum_gifts(num, ranks):
         if ranks[i] > ranks[i + 1] and gifts[i] <= gifts[i + 1]:
             gifts[i] = gifts[i + 1] + 1
 
+        ## This works, above has issues
+        # if ranks[i] > ranks[i + 1]:
+        #     gifts[i] = max(gifts[i], gifts[i + 1] + 1)
+
     # Print the minimum number of gifts required
     print("\nMinimum no of gifts required: ", sum(gifts))
     print()
