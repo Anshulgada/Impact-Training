@@ -10,7 +10,7 @@ class Ov:
         else:
             print("No Input")
 
-a = Ov()
-a.func1()
-a.func1(10)
-a.func1(10, 20)
+a1 = Ov()
+a1.func1()
+a1.func1(10)
+a1.func1(10, 20)
