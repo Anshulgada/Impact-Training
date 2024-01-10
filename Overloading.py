@@ -52,6 +52,8 @@ class OpOver:
     # __eq__ for checking equality (==)
     # __ne__ for checking inequality (!=)
     # __str__ for checking the string representation
+    # __lt__ for checking less than functionality
+    # __gt__ for checking greater than functionality
 
 c1 = OpOver(1,5)
 c2 = OpOver(3,4)
