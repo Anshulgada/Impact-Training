@@ -99,22 +99,24 @@ class LinkList:
             current = current.next
         current.next = None
 
-
-
     def deleteAnywhere(self, position):
-        if not self.head:
+        if not self.head:                   # Check if the list is empty
             print("List is empty")
             return
 
-        current = self.head
-        while current is not None and current.next.data is not position:    # Error when data not in LL
+        if self.head.data == position:      # Check if the node to be deleted is the first node
+            # self.head = self.head.next
+            self.deleteAtStart()            # Update the head to the next node using the Delete First Node function
+            return
+
+        current = self.head                 # Traverse the list to find the node to be deleted
+        while current.next is not None and current.next.data != position:
             current = current.next
-        if current is not None:
-            current.next = current.next.next
+
+        if current.next is not None:            # Check if the node to be deleted is found
+            current.next = current.next.next    # Skip the node to be deleted
         else:
-            print("Given data is not present in list")
-
-
+            print("Given data is not present in the list")
 
     def display(self):
         current = self.head         # Current gets the head's reference
@@ -125,13 +127,15 @@ class LinkList:
 
 
 obj = LinkList()        # Creating a new node with LinkList class which uses Node class
+
 print("\nInsertion ==>")
 obj.insertAtStart(10)   # Inserting node at the beginning
 obj.insertAtEnd(12)     # Inserting node at the end
 obj.insertAnywhere(10, 11)
 obj.display()           # Use display func to print the nodes
+
 print("\nDeletion ==>")
-obj.deleteAtStart()
-obj.deleteLast()
-obj.deleteAnywhere(15)
-obj.display()
+obj.deleteAtStart()         # Delete First Node
+obj.deleteLast()            # Delete Last Node
+obj.deleteAnywhere(15)      # Delete any node you want
+obj.display()               # Use display func to print the nodes
