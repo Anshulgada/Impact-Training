@@ -121,6 +121,9 @@ class LinkList:
 
     # def search(self, position):
 
+    # def findMax
+
+    # def findMin
 
     def display(self):
         current = self.head         # Current gets the head's reference
