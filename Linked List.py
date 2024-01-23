@@ -36,7 +36,7 @@ class LinkList:
 
         # if not self.head:               # Alternate method to not use else loop
         #     self.head = new_Node
-        #     return                      # Just use return so it exits the for loop
+        #     return                      # Just use return so it exits the function loop
         # new_Node.next = self.head       # Use else block as normal so if for loop is not used
         # self.head = new_Node            # So no return & hence these 2 lines execute
 
