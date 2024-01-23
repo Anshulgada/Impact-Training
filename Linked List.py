@@ -17,6 +17,7 @@
 # Change the address of the prev node to next address.
 # Also change the address of the delete node to NULL.
 
+# Singly Linked List
 
 class Node:                       # This class is only for Node creation
     def __init__(self,data):
@@ -117,6 +118,9 @@ class LinkList:
             current.next = current.next.next    # Skip the node to be deleted
         else:
             print("Given data is not present in the list")
+
+    # def search(self, position):
+
 
     def display(self):
         current = self.head         # Current gets the head's reference
