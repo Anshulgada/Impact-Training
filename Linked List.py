@@ -133,6 +133,15 @@ class LinkList:
             current = current.next          # Iterate to next
 
 
+    def count_nodes(self):
+        current = self.head
+        count = 0
+        while current:
+            count += 1
+            current = current.next
+        return count
+
+
 obj = LinkList()        # Creating a new node with LinkList class which uses Node class
 
 print("\nInsertion ==>")
@@ -140,6 +149,8 @@ obj.insertAtStart(10)   # Inserting node at the beginning
 obj.insertAtEnd(12)     # Inserting node at the end
 obj.insertAnywhere(10, 11)
 obj.display()           # Use display func to print the nodes
+
+print("\nTotal Nodes ==>", obj.count_nodes())
 
 print("\nDeletion ==>")
 obj.deleteAtStart()         # Delete First Node
