@@ -9,8 +9,8 @@ class Node:                       # This class is only for Node creation
 
 class DoublyLinkList:
     def __init__(self):
-        self.head = None
-        self.tail = None
+        self.head = None        # Created the head node
+        self.tail = None        # Created the tail node
 
     def insertAtStart(self, data):
         new_Node = Node(data)           # Calling Node class to put that data in a new object
