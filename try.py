@@ -155,6 +155,38 @@
 # print(my_l)
 
 
+# set1 = {1,2,3}
+# set2 = set1.copy()
+# set2.add(4)
+# print(set1)
+
+# tup1 = (1,2,3)
+# tup2 = (4,5,6)
+# tup3 = tup1 * 2 + tup2
+# print(len(tup3))
+
+# dict1 = {"apple": 1, "banana": 2, "cherry":3}
+# dict1.clear()
+# print(dict1)
+
+# dict1 = {"apple": 1, "banana": 2, "cherry":3}
+# dict2 = {key: value for key, value in dict1.items() if key != "banana"}
+# print(dict2)
+
+# set1 = {1,2,3}
+# set2 = {4,5,6}
+# print(len(set1 + set2))
+
+
+# nested_list = [[1,2,3], [4,5,6], [7,8,9]]
+# nested_list.sort(reverse=True)
+# print(nested_list)
+
+# nested_list = [[1,2,3], [4,5,6], [7,8,9]]
+# transposed_list = [[row[i] for row in nested_list] for i in range(len(nested_list[0]))]
+# print(transposed_list)
+
+
 
 
 
