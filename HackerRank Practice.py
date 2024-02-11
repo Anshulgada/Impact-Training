@@ -95,7 +95,7 @@
 
 
 
-# Print Max Altitude a Pilot can reach when starting at 0
+# # Print Max Altitude a Pilot can reach when starting at 0
 def MaxAltitude(size, arr):
     maxAltitude = 0
     current = 0
