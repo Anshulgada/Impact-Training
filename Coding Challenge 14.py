@@ -1,4 +1,4 @@
-'''
+"""
 
 Problem ==> CHECK THE STRUCTURE
 
@@ -77,7 +77,7 @@ An explanation of q = 5 queries:
 
 5.	In Query 4, the query 3 4 5 1 2 is not valid. The root, the first value in the list, is 3. The second value, 4, must be the right child of 3. The third value, 5, must be the right child of 4. For the fourth value to be 1, it must be the left child of 5, but that is less than the root at 4 and is in its right subtree. Return the string NO.
 
-'''
+"""
 
 
 def is_valid_BST(n, a):
