@@ -187,7 +187,147 @@
 # print(transposed_list)
 
 
+# class Python:
+#     def __init__(self):
+#         self.python_dob = None
+#     def check_existence(self):
+#         if (self.python_dob >= 1991 and self.python_dob <= 2032):
+#             print("The python still exists")
+#         else:
+#             print("The python doesn't exists")
+#
+# p1 = Python()
+# p1.python_dob=1800
+# p1.check_existence()
+#
+# p2 = Python()
+# p2.python_dob = 2020
+# p2.check_existence()
 
 
+# class Super:
+#     def __init__(self,a ,b):
+#         print("1")
+#         self.__a = a
+#         self.b = b
+#     def m1(self):
+#         print("m1")
+#     def m2(self):
+#         print("m2")
+#
+# class Super2(Super):
+#     def m1(self):
+#         print("2")
+#         super().m1()
+#
+# s = Super2(20,13)
+# s.m1()
 
 
+# class Customer:
+#     def __init__(self, cust_id, name, age, wallet_balance):
+#         self.cust_id = cust_id
+#         self.name = name
+#         self.age = age
+#         self.wallet_balance = wallet_balance
+#
+#     def update_balance(self, amount):
+#         if amount < 1000 and amount > 0:
+#             self.wallet_balance -= amount
+#
+#     def show_balance(self):
+#         print("The balance is", self.wallet_balance)
+#
+# c1 = Customer(100, "Abc", 24, 1000)
+# c1.update_balance(500)
+# c1.show_balance()
+
+
+# class Play:
+#     def __init__(self, game, price):
+#         print("Inside Constructor")
+#         self.game = game
+#         self.price = price
+#
+# obj1 = Play("FootBall", 20000)
+# print("FootBall is game here", obj1.game, "and its price", obj1.price)
+#
+# obj2 = Play("Cricket", 35000)
+# print("Cricket is game here", obj2.game, "and its price", obj2.price)
+
+
+# class Test:
+#     def __init__(self, one, two):
+#         print("inside Constructor")
+#
+# obj1 = Test(100,200,300)
+
+
+# class Example:
+#     def __init__(self,num):
+#         self.num = num
+#
+#     def set_num(self,num):
+#         num = num
+#     def get_num(self):
+#         return self.num
+#
+# obj = Example(10)
+# print(obj.get_num())
+#
+# obj.set_num(15)
+# print(obj.get_num())
+
+
+# class Mobile:
+#     def __init__(self,price,brand):
+#         self.price = price
+#         self.brand = brand
+#
+# mob1 = Mobile(1000,"Apple")
+# print("Mob 1:", mob1.price)
+#
+# mob2 = mob1
+# mob2.price = 3000
+#
+# print("mob1:", mob1.price)
+# print("mob2:", mob2.price)
+
+
+# class Example:
+#     num = 10
+#     @staticmethod
+#     def add(n1,n2):
+#         res = (n1+n2)*Example.num
+#         return res
+# print(Example.add(100,200))
+
+
+# class OOPs:
+#     pass
+#
+# obj1 = OOPs()
+# obj2 = OOPs()
+#
+# obj1.a = 20
+# obj1.b = "hello"
+# obj1.c = 1
+#
+# print(obj1.c)
+#
+# obj2.a = 30
+# obj2.b = 'Bye'
+# obj2.c = 11
+#
+# print(obj2.c)
+
+
+# class Test:
+#     def m1(self):
+#         print('M1')
+#
+#     def m2(self):
+#         self.m1()
+#         print('M2')
+#
+# Test().m2()
