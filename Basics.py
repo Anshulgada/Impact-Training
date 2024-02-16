@@ -31,3 +31,5 @@
 # z = [1, 2, 3, 4]            # ==>  List
 # a = (1, 2, 3, 4)            # ==>  Tuple
 
+x = [2, 1, 4, 3]
+print(list(sorted(x)))
