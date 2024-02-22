@@ -331,3 +331,223 @@
 #         print('M2')
 #
 # Test().m2()
+
+
+# x = str
+# class abc(x):
+#     def __init__(self):
+#         print(x)
+#         print("!")
+#
+# abc()
+
+
+
+# class a:
+#     def __init__(self):
+#         print("Class a")
+#
+# class b:
+#     def __init__(self):
+#         print("Class b")
+#
+# class c(b,a):
+#     def __init__(self):
+#         super().__init__()
+#
+# c()
+
+
+# class a:
+#     def __init__(abc):
+#         print("hw")
+# class b(a):
+#    pass
+#
+# b()
+
+
+# class a:
+#     def fun(self, other):
+#         print("Class a")
+#         other.fun()
+#
+# class b:
+#     def fun(self):
+#         print("Class b")
+#
+# obj = a()
+# obj1=b()
+# obj.fun(obj1)
+
+
+# class a:
+#     def fun1():
+#         print("hello")
+#     def fun1():
+#         print("hi")
+#
+# a.fun1()
+
+# class a:
+#     def fun(self):
+#         print("hw")
+#
+# obj=a()
+# obj.fun()
+
+
+# class a:
+#     print("A")
+#     def __init__(self):
+#         print("B")
+
+# class a:
+#     def __init__(self):
+#         print("Class a")
+# class b(a):
+#     def __init__(self):
+#         a.__init__()
+#
+# b()
+
+# class abc:
+#     def __init__(self):
+#         print("init 1")
+#
+#     def __init__(self):
+#         print("init 2")
+#
+# abc()
+
+# class a:
+#     def fun1(self):
+#         print("class a")
+# class b:
+#     def fun1(self):
+#         print("class b")
+# class c(a,b):
+#     def fun1(self):
+#         print("class c")
+#         super().fun1()
+# class d(c):
+#     def fun2(self):
+#         print("class d")
+# obj=d()
+# obj.fun1()
+
+
+# class A:
+#     def one(self):
+#         return self.two()
+#     def two(self):
+#         return 'A'
+# class B(A):
+#     def two(self):
+#         return 'B'
+#
+# obj2=B()
+# print(obj2.two())
+
+# class A:
+#     pass
+# class B(A):
+#     pass
+#
+# obj = B()
+# print(isinstance(obj,A))
+
+# class A:
+#     def __init__(self,x,y):
+#         self.x = x
+#         self.y = y
+#         def __str__(self):
+#             return 1
+#
+#         def __eq__(self,other):
+#             return self.x * self.y == other.x * other.y
+#
+# o1 = A(5,2)
+# o2 = A(2,5)
+# print(o1==o2)
+
+
+# class Demo:
+#     def check(self):
+#         return "Demo's check"
+#
+#     def display(self):
+#         print(self.check())
+#
+# class DemoD(Demo):
+#     def check(self):
+#         return "DemoD's check'"
+#
+# Demo().display()
+# DemoD().display()
+
+
+# class a:
+#     def __init__(self):
+#         self.mul(15)
+#         print(self.i)
+#
+#     def mul(self,i):
+#         self.i = 4*i;
+#
+# class b(a):
+#     def __init__(self):
+#         super().__init__()
+#     def mul(self,i):
+#         self.i = 2*i;
+# o = b()
+
+# class a:
+#     def __str__(self):
+#         return '1'
+# class b(a):
+#     def __init__(self):
+#         super().__init__()
+# class c(b):
+#     def __init__(self):
+#         super().__init__()
+# def main():
+#     o1=b()
+#     o2=a()
+#     o3=c()
+#     print(o1,o2,o3)
+# main()
+
+
+# class a:
+#     def __init__(self):
+#         self.__i = 1
+#         self.j=5
+#
+#     def display(self):
+#         print(self.__i,self.j)
+#
+# class b(a):
+#     def __init__(self):
+#         super().__init__()
+#         self.__i=2
+#         self.j=7
+#
+# c=b()
+# c.display()
+
+
+class d:
+    def __init__(self):
+        self.x=1
+    def change(self):
+        self.x=10
+
+class dd(d):
+    def change(self):
+        self.x=self.x+1
+        return self.x
+def main():
+    o=dd()
+    print(o.change())
+main()
