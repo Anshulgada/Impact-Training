@@ -537,17 +537,20 @@
 # c.display()
 
 
-class d:
-    def __init__(self):
-        self.x=1
-    def change(self):
-        self.x=10
+# class d:
+#     def __init__(self):
+#         self.x=1
+#     def change(self):
+#         self.x=10
+#
+# class dd(d):
+#     def change(self):
+#         self.x=self.x+1
+#         return self.x
+# def main():
+#     o=dd()
+#     print(o.change())
+# main()
 
-class dd(d):
-    def change(self):
-        self.x=self.x+1
-        return self.x
-def main():
-    o=dd()
-    print(o.change())
-main()
+
+
